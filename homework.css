@@ -1,0 +1,296 @@
+/*Info about the author 
+Name, surname: <Daniels Kogans>
+Student ID number: <dk23067>
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;400;700&display=swap');
+
+
+.top{
+    width: 100%;
+    height: 100px;
+    display: inline-flex;
+    flex-flow: row ;
+    text-align: center; 
+    align-items: center;
+    
+}
+
+
+nav{
+    position:fixed;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    background-color: white;
+} 
+
+
+
+#banner-top{
+    position: relative;
+}
+
+.banner{
+
+    display: flex;
+    align-items: center;
+   justify-content: center; 
+   
+}
+
+#banner-text{
+   position:absolute; 
+     
+}
+
+.bg{   
+    background-image: url("images/books.jpg");
+    filter: opacity(60%);
+    background-repeat: no-repeat;
+    outline-style:solid;
+    outline-color: #404080;
+    outline-offset:-20px; 
+    width: 100%;
+    height: 850px; 
+}
+
+.framed.thick{
+    text-align: center;
+    
+}
+
+.text.title-secondary{
+    font-family: "Roboto Condensed";
+    color: #404080;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.text.title{
+    font-family: "Roboto Condensed";
+    color: #404080;
+    text-transform: uppercase;
+    font-size: 100px;
+    padding-bottom: 20px;
+}
+
+.framed.thin.text.title-secondary a{
+    font-family: "Roboto Condensed";
+    text-decoration: none;
+    color: #404080;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+
+
+.left{
+    align-self: baseline;
+}
+
+.menu.center{
+    font-family: "Roboto Condensed";
+}
+
+.menu-top{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly ;
+}
+
+.menu-item{
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.menu-item a:hover, .dropdown:hover .dropbtn {
+    color: #82A9E4;
+}
+
+.menu.right img:hover{
+    filter: opacity(50%);
+}
+
+.menu-item a{
+    text-decoration: none;
+}
+
+.menu-item.has-sub-menu{
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-list{
+    display: none;
+    position: absolute;
+    font-size: 15px;
+    background-color: white;
+    font-weight:normal;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.dropdown-list li{
+    padding: 5px;
+}
+
+.menu-item.has-sub-menu:hover .dropdown-list {
+    display: block;
+    padding: 10px;
+    width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius:5px;
+  }
+
+.framed.thin.text.title-secondary a:hover{
+    background-color: rgba(255, 255, 255, 0.3)
+   
+}
+
+
+/*  MAIN    */
+
+main{
+    display: inline-flex;  
+    flex-flow: row;
+    text-align: left;
+    padding: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: "Roboto Condensed";
+    color: #404080;
+    
+}
+
+main a:hover{
+    color: #82A9E4;
+}
+
+aside{
+    text-align: left;
+    display:flex;
+    flex-flow:column;
+    width: 400px;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+
+aside li a{
+    text-decoration: none;
+    font-size: small;
+}
+
+aside li{
+    padding-bottom: 15px;
+}
+
+aside ul{
+    margin-bottom:40px ;
+    border-bottom: 1px solid;
+    
+}
+
+h2{
+    margin-bottom:30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+section{
+    text-align: center;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+
+.book-title{
+padding-top: 20px;
+}
+
+.book-author{
+    padding-top: 10px;
+}
+
+.book-author a:hover{
+  color:  #82A9E4;
+}
+
+.book-author a{
+    text-decoration: none;
+    font-weight:300;
+}
+
+.price{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color:#82A9E4;
+}
+
+
+
+/*  FOOTER    */
+
+footer{
+    font-family: "Roboto Condensed";
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    justify-content: center;
+    padding: 20px;
+    background-color: #BDD1E9;
+}
+
+.menu-bottom{
+    display: inline-flex;
+    flex-direction: row;  
+    justify-content: center;
+}
+
+.menu-bottom > :nth-child(n+2){
+    list-style-type: "| ";
+}
+
+
+.menu-bottom li{
+    margin-inline: 5px;
+    
+
+}
+
+.menu-bottom li a{
+    
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+}
+
+#copyright{
+    font-size: small;
+    font-weight: lighter;
+    background-color: #BDD1E9;
+    position:absolute;
+    display: inline-flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+    
+}
